@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+actor Customer as C
+rectangle ATM {
+  usecase "Login" as UC1
+  usecase "Withdraw" as UC2
+  usecase "Deposit" as UC3
+  usecase "Transfer" as UC4
+  usecase "Check Balance" as UC5
+}
+
+C --> UC1
+C --> UC2
+C --> UC3
+C --> UC4
+C --> UC5
+@enduml
